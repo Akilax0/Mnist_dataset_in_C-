@@ -1,5 +1,4 @@
 CC=g++
-MNIST_ML_ROOT := /home/akilax0/Documents/Projects/AIinC++/mnist_ml
 SRC := $(PWD)/src
 CFLAGS := -std=c++17 -DEUCLID
 INCLUDE_DIR := $(PWD)/include/

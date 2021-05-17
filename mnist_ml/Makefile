@@ -1,5 +1,4 @@
 CC=g++
-MNIST_ML_ROOT := /home/akilax0/Documents/Projects/AIinC++/mnist_ml
 ##################important read use command before make or else fucked################
 #export MNIST_ML_ROOT=$PWD
 INCLUDE_DIR := $(MNIST_ML_ROOT)/include
@@ -11,7 +10,7 @@ LIB_DATA := libdata.so
 all: $(LIB_DATA)
 
 $(LIB_DATA) : libdir objdir obj/data_handler.o obj/data.o 
-	$(CC) $(CFLAGS) -o $(MNIST_ML_ROOT)/lib/$(LIB_DATA) obj/data_handler.o obj/data.o
+	$(CC) $(CFLAGS) -o $(MNIST_ML_ROOT)/lib/$(LIB_DATA) obj/*.o
 ###rm -r $(MNIST_ML_ROOT)/obj
 
 libdir:
