@@ -1,6 +1,8 @@
 CC=g++
 ##################important read use command before make or else fucked################
 #export MNIST_ML_ROOT=$PWD
+#cd lib
+#export LD_LIBRARY_PATH=$PWD
 INCLUDE_DIR := $(MNIST_ML_ROOT)/include
 SRC:= $(MNIST_ML_ROOT)/src
 CFLAGS := -std=c++11 -g
