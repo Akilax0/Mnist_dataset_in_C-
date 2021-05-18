@@ -5,7 +5,7 @@ CC=g++
 #export LD_LIBRARY_PATH=$PWD
 INCLUDE_DIR := $(MNIST_ML_ROOT)/include
 SRC:= $(MNIST_ML_ROOT)/src
-CFLAGS := -std=c++11 -g
+CFLAGS := -shared -std=c++17 -g
 LIB_DATA := libdata.so
 
 
