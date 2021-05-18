@@ -1,5 +1,8 @@
 #include<data_handler.hpp>
   
+//g++ -I./include/ -o main ./src/*.cc && ./main
+
+
 data_handler::data_handler(){
   data_array = new std::vector<data *> ;
   test_data = new std::vector<data *> ;
@@ -148,9 +151,8 @@ std::vector<data *> *data_handler::get_validation_data(){
 
 int main(){
   data_handler *dh = new data_handler();
-  dh->read_feature_vector("../FILENAME");
-  dh->read_feature_labels("../FILENAME");
+  dh->read_feature_vector("./train-images.idx3-ubyte");
+  dh->read_feature_labels("./train-labels-idx1-ubyte");
   dh->split_data();
   dh->count_classes();
-  
 }
